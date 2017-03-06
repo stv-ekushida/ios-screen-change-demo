@@ -1,6 +1,7 @@
 # ios-screen-change-demo
 
 ## サンプル
+画面間で引き渡すパラメタは、privateで定義し、staticメソッド経由で設定する。
 
 ```swift:SecondViewController.swift
 import UIKit
