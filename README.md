@@ -27,6 +27,10 @@ class SecondViewController: UIViewController {
 }
 ```
 
+```swift:FirstViewController.swift
+        let vc = SecondViewController.create(viewModel: SecondViewModel(title: "aaa"))
+        present(vc, animated: true, completion: nil)
+```        
 
 
 ## 画面遷移用のヘルパー
