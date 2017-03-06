@@ -29,10 +29,18 @@ class SecondViewController: UIViewController {
 ```
 
 ```swift:FirstViewController.swift
+import UIKit
+
+class FirstViewController: UIViewController {
+
+    // MARK: User Interaction
+    @IBAction func didTapButton(_ sender: UIButton) {
+        
         let vc = SecondViewController.create(viewModel: SecondViewModel(title: "aaa"))
         present(vc, animated: true, completion: nil)
+    }    
+}
 ```        
-
 
 ## 画面遷移用のヘルパー
 
